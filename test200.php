@@ -2,10 +2,11 @@
 <head>
 <title>入力画面</title>
 <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
 
-<form method="post" action="conScr.php">
+</head>
+<body onload="queCon()">
+
+<form name="frmData" method="post" action="conScr.php">
 <input type="text" name="frmId">:出席番号<br />
 <div class="br"></div>
 
@@ -32,25 +33,25 @@
 
 
 <!-- 質問１ -->
-<p>質問１</p>
-<input type="radio" name="q1" value="q1Sel1">
-<input type="radio" name="q1" value="q1Sel2">
-<input type="radio" name="q1" value="q1Sel3"><br />
+<div id="q1Con"></div>
+<input type="radio" id="q1Sel1" name="q1"><span id="q1ConSel1"></span></input>
+<input type="radio" id="q1Sel2" name="q1"><span id="q1ConSel2"></span></input>
+<input type="radio" id="q1Sel3" name="q1"><span id="q1ConSel3"></span></input><br />
 <div class="br"></div>
 
 <!-- 質問２ -->
-<p>質問２</p>
-<input type="radio" name="q2" value="q2Sel1">
-<input type="radio" name="q2" value="q2Sel2">
-<input type="radio" name="q2" value="q2Sel3"><br />
+<div id="q2Con"></div>
+<input type="radio" id="q2Sel1" name="q2" value="q2Sel1"><span id="q2ConSel1"></span></input>
+<input type="radio" id="q2Sel2" name="q2" value="q2Sel2"><span id="q2ConSel2"></span></input>
+<input type="radio" id="q2Sel3" name="q2" value="q2Sel3"><span id="q2ConSel3"></span></input><br />
 <div class="br"></div>
 
 <!-- 質問３ -->
-<p>質問３</p>
-<input type="checkbox" name="q3[]" value="q3Sel1">
-<input type="checkbox" name="q3[]" value="q3Sel2">
-<input type="checkbox" name="q3[]" value="q3Sel3">
-<input type="checkbox" name="q3[]" value="q3Sel4"><br />
+<div id="q3Con"></div>
+<input type="checkbox" id="q3Sel1" name="q3[]" value="q3Sel1"><span id="q3ConSel1"></span></input>
+<input type="checkbox" id="q3Sel2" name="q3[]" value="q3Sel2"><span id="q3ConSel2"></span></input>
+<input type="checkbox" id="q3Sel3" name="q3[]" value="q3Sel3"><span id="q3ConSel3"></span></input>
+<input type="checkbox" id="q3Sel4" name="q3[]" value="q3Sel4"><span id="q3ConSel4"></span></input><br />
 <div class="br"></div>
 
 <input type="submit">
