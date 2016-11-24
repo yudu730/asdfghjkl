@@ -1,0 +1,21 @@
+﻿.br{
+	margin-bottom:10px;
+}
+.tbl_01{
+	width: 800px;
+	border-collapse: collapse;
+	margin:15px;
+}
+.tbl_01 th{
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	color: #333;
+	background-color: #eee;
+	border: 1px solid #b9b9b9;
+}
+.tbl_01 td{
+	padding: 6px;
+	background-color: #fff;
+	border: 1px solid #b9b9b9;
+}
